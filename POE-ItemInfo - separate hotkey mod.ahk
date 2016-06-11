@@ -8031,6 +8031,7 @@ TogglePOEItemScript()
 {
 ; ### Modded version. Usual parsing is invoked in line 7779 via clipboard change, but disabled in this script ###
  ^d::
+    clipboard =   ;clear the clipboard
     Send ^c
 	Sleep, 50
     Global Opts
@@ -8045,7 +8046,7 @@ TogglePOEItemScript()
             }
         }
     }
-    return
+	return
 ; ###
 
 
